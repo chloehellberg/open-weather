@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlwebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -14,7 +14,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlwebpackPlugin({
+    new HtmlWebpackPlugin({
       title: 'Shape Tracker',
       template: './src/index.html',
       inject: 'body'
