@@ -1,7 +1,7 @@
 {
-  "name": "shape-tracker",
+  "name": "api-calls",
   "version": "1.0.0",
-  "description": "Shape Tracker",
+  "description": "API Calls",
   "repository": {},
   "main": "index.js",
   "scripts": {
