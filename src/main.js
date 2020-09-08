@@ -7,10 +7,12 @@ import Conversion from './../src/scripts.js';
 $(document).ready(function() {
   $('#weatherLocation').click(function() {
     const city = $('#location').val();
+    const zipCode = $('#location').val();
     $('#location').val("");
     
     let request = new XMLHttpRequest();
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`;
+    const urlZip = `http://api.openweathermap.org/data/2.5/weather?q=${zipCode}&appid=${process.env.API_KEY}`;
 
     request.onreadystatechange = function() {
       console.log(this.status);
@@ -22,6 +24,7 @@ $(document).ready(function() {
     };
 
     request.open("GET", url, true);
+    request.open("GET", urlZip, true);
     request.send();
     
     function getElements(response) {
