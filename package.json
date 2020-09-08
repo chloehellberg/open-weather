@@ -1,7 +1,7 @@
 {
-  "name": "api-calls",
+  "name": "open-weather-api",
   "version": "1.0.0",
-  "description": "API Calls",
+  "description": "Open Weather API Calls",
   "repository": {},
   "main": "index.js",
   "scripts": {
